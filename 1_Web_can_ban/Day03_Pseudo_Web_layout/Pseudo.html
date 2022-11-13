@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class, Pseudo element</title>
+
+    <style>
+        /* Pseudo class được dùng để xác định một trạng thái đặc biệt */
+        a:link {
+            color: blue
+        }
+        a:visited {
+            color: green
+        }
+        a:hover {
+            color: red
+        }
+        a:active {
+            color: orange
+        }
+        /* Pseudo element được hiểu nôm na là phần tử giả, dùng để style cho ký tự đầu tiên, dòng đầu tiên, phần phía trước hoặc phần phía sau của phần tử */
+        .paragraph::first-letter {
+            color: red;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .paragraph::first-line {
+            text-decoration: underline;
+        }
+        .paragraph::selection {
+            color: green;
+            background-color: yellow;
+        }
+        h1::before {
+            content:'';
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid green;
+        }
+        .vnd::after {
+            content: ' đồng';
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tiêu đề</h1>
+    <a href="http://google.com/" target="_blank">Google</a>
+    <p class="paragraph">Thi đấu lép vế trước Thái Lan, nhưng Việt Nam một lần nữa thu về kết quả tốt trước kình địch Đông Nam Á. Nhờ màn toả sáng của Quốc Việt đầu hiệp hai, cùng sự xuất sắc của thủ môn Văn Bình ở loạt sút luân lưu, Việt Nam giành vị trí thứ ba tại VCK U19 Đông Nam Á. Mạch bất bại của Việt Nam trước Thái Lan ở cấp độ U19 cũng được nối dài lên con số 6.</p>
+    <p class="vnd">10.000</p>
+</body>
+</html>

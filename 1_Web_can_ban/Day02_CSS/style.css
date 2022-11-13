@@ -1,0 +1,42 @@
+/* External CSS */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+#topic {
+  color: brown;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-top: 100px;
+}
+
+.text {
+  padding-top: 20px;
+  font-size: 20px;
+  opacity: 0.3;
+}
+.text:hover {
+  color: rgb(153, 90, 102);
+  opacity: 1;
+}
+
+.link {
+  /* Kiểu display: block sẽ chiếm cả 1 dòng,
+    còn kiểu display: inline-block chỉ chiếm độ rộng tối thiểu  */
+  display: block;
+  padding-top: 50px;
+}
+
+.photo {
+  margin: 50px;
+  width: 200px;
+  height: 150px;
+  object-fit: contain;
+  background-color: cyan;
+  padding: 20px;
+  border-width: 5px;
+  border-color: darkred;
+  border-style: dashed;
+}

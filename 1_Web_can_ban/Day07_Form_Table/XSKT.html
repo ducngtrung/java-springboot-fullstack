@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XSKT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #container {
+            padding-top: 100px;
+            display: flex;
+            justify-content: center;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        th {
+            font-size: 18px;
+            color: #fff;
+            font-weight: bold;
+            background-color: #6F7677;
+            padding: 7px 0;
+        }
+        tr:nth-child(1) {
+            background-color: #ffffcf;
+            color: #c63c2c;
+        }
+        tr.prize-content:hover {
+            background-color: #ffffcf;
+        }
+        td {
+            text-align: center;
+            cursor: pointer;
+            border-left: 1px solid #cccccc;
+            border-bottom: 1px solid #cccccc;
+        }
+        td.prize {
+            width: 70px;
+            font-size: 13px;
+        }
+        td.results span {
+            padding: 6px 0;
+            border-right: 1px solid #cccccc;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        div.numbers {
+            display: grid;
+        }
+        div.numbers[data-quantity="1"] {
+            grid-template-columns: minmax(0, 1fr);
+        }
+        div.numbers[data-quantity="2"] {
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        }
+        div.numbers[data-quantity="3"] {
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+        }
+        div.numbers[data-quantity="4"] {
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Xổ số Miền Bắc Chủ Nhật 17-07-2022</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="prize">Đặc biệt</td>
+                    <td class="results">
+                        <div class="numbers" data-quantity="1">
+                            <span>66327</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="prize-content">
+                    <td class="prize">Giải nhất</td>
+                    <td class="results">
+                        <div class="numbers" data-quantity="1">
+                            <span>20157</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="prize-content">
+                    <td class="prize">Giải nhì</td>
+                    <td class="results">
+                        <div class="numbers" data-quantity="2">
+                            <span>03078</span>
+                            <span>20001</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="prize-content">
+                    <td class="prize">Giải ba</td>
+                    <td class="results">
+                        <div class="numbers" data-quantity="3">
+                            <span>22771</span>
+                            <span>88156</span>
+                            <span>52404</span>
+                            <span>55038</span>
+                            <span>43610</span>
+                            <span>12392</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="prize-content">
+                    <td class="prize">Giải tư</td>
+                    <td class="results">
+                        <div class="numbers" data-quantity="4">
+                            <span>1519</span>
+                            <span>2533</span>
+                            <span>8023</span>
+                            <span>6421</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="prize-content">
+                    <td class="prize">Giải năm</td>
+                    <td class="results">
+                        <div class="numbers" data-quantity="3">
+                            <span>4871</span>
+                            <span>4766</span>
+                            <span>9593</span>
+                            <span>2960</span>
+                            <span>7430</span>
+                            <span>5438</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="prize-content">
+                    <td class="prize">Giải sáu</td>
+                    <td class="results">
+                        <div class="numbers" data-quantity="3">
+                            <span>675</span>
+                            <span>358</span>
+                            <span>168</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="prize-content">
+                    <td class="prize">Giải bảy</td>
+                    <td class="results">
+                        <div class="numbers" data-quantity="4">
+                            <span>24</span>
+                            <span>34</span>
+                            <span>89</span>
+                            <span>90</span>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

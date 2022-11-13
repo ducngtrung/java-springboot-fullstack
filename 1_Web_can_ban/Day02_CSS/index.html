@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 02 - CSS</title>
+
+    <!-- Gọi file External CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--Internal CSS-->
+    <style>
+      /* Style cho id */
+      #block1 {
+        width: 200px;
+        height: 100px;
+        background-color: skyblue;
+      }
+      #block2 {
+        background-color: thistle;
+      }
+      #paragraph1 {
+        width: 2000px;
+        background-color: turquoise;
+      }
+
+      /* Style cho class */
+      .textColor {
+        color: tomato;
+      }
+      .textFont {
+        font-size: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Inline CSS-->
+    <p
+      style="
+        color: red;
+        font-size: 30px;
+        font-weight: 600;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        background-color: silver;
+        text-transform: uppercase;
+        text-decoration: underline;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        margin-top: 100px;
+      "
+    >
+      Học CSS
+    </p>
+
+    <!--CSS selectors: id, class-->
+    <div id="block1"></div>
+    <div id="block2">
+      <a href="https://google.com/" target="_blank">GOOGLE</a>
+      <p id="paragraph1">Hello</p>
+    </div>
+
+    <h2 class="textColor textFont">Tiêu đề 1</h2>
+    <h2 class="textColor">Tiêu đề 2</h2>
+
+    <!--Các phần tử được CSS trong file style.css-->
+    <h1 id="topic">Subject: Cascading Style Sheet</h1>
+    <p class="text">What is CSS?</p>
+    <a
+      class="link"
+      href="http://www.w3schools.com/css/default.asp"
+      target="_blank"
+      >CSS Tutorial</a
+    >
+    <img
+      class="photo"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/240px-CSS3_logo_and_wordmark.svg.png"
+      alt="css-logo"
+      title="CSS logo"
+    />
+  </body>
+</html>

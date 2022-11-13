@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 07 - Form, Table</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        table {
+            margin: 20px 0;
+        }
+        table, th, td {
+            border-width: 1px;
+            border-color: orange;
+            border-style: solid;
+            border-collapse: collapse;
+        }
+        tr:nth-child(4) {
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <!-- Form -->
+    <form action="#" method="POST">
+        <label for="user">User name:</label>
+        <input id="user" type="text" placeholder="Enter user name" name="user" required>
+        <br><br>
+        <label for="pass">Password:</label>
+        <input id="pass" type="password" placeholder="Enter password" name="pass" required>
+        
+        <br><br>
+        <label for="">Gender:</label>
+        <input id="female" type="radio" value="Female" name="gender_radio_button">
+        <label for="female">Female</label>
+        <input id="male" type="radio" value="Female" name="gender_radio_button">
+        <label for="male">Male</label>
+        
+        <br><br>
+        <label for="">Favourites:</label>
+        <input id="swimming" type="checkbox" value="Swim" name="favourites">
+        <label for="swimming">Swimming</label>
+        <input id="reading" type="checkbox" value="Reading" name="favourites">
+        <label for="reading">Reading</label>
+        <input id="cycling" type="checkbox" value="cycling" name="favourites">
+        <label for="cycling">Reading</label>
+
+        <br><br>
+        <label for="city">City:</label>
+        <select id="city" name="city">
+            <option value="ha-noi">Hà Nội</option>
+            <option value="da-nang">Đà Nẵng</option>
+            <option value="ho-chi-minh">Hồ Chí Minh</option>
+        </select>
+
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <!-- Table -->
+    <table>
+        <tr>
+            <th>STT</th>
+            <th>Họ và tên</th>
+            <th>Năm sinh</th>
+            <!-- "th" represents heading -->
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Nguyễn Trung Đức</td>
+            <td>1994</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Vương Khánh Huyền</td>
+            <td>1996</td>
+        </tr>
+        <tr>
+            <td colspan="3">Happiness</td>
+            <!-- Sử dụng "colspan" để gộp nhiều cột với nhau -->
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,43 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 70%;
+  margin: 20px auto 20px auto;
+}
+
+#intro {
+  background-color: seashell;
+  padding: 20px;
+  text-align: center;
+  border-width: 3px;
+  border-color: darkred;
+  border-style: solid;
+}
+
+#content {
+  background-color: antiquewhite;
+  display: flex;
+  padding: 20px;
+  border-width: 1px;
+  border-color: chocolate;
+  border-style: solid;
+}
+
+#part-1 {
+  width: 20%;
+  text-align: center;
+}
+
+#part-2 {
+  width: 40%;
+  text-align: center;
+}
+
+#part-3 {
+  width: 40%;
+  text-align: center;
+}

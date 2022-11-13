@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BTVN 6</title>
+  
+  <style>
+    h1 {
+      text-align: center;
+      background-color: #d27fb9;
+      padding: 20px;
+      animation: change-color 5s infinite;
+    }
+    h1::after {
+      content: "Techmaster";
+      animation: change-content 5s infinite;
+    }
+    /* Dùng Pseudo element là "after" hay "before" đều được */
+
+    @keyframes change-color {
+      20% {
+        background-color: rgb(210, 210, 164);
+      }
+      40% {
+        background-color: rgb(152, 201, 152);
+      }
+      60% {
+        background-color: rgb(186, 166, 128);
+      }
+      80% {
+        background-color: rgb(142, 142, 188);
+      }
+    }
+    @keyframes change-content {
+      20% {
+        content: "Học"
+      }
+      40% {
+        content: "Là";
+      }
+      60% {
+        content: "Có";
+      }
+      80% {
+        content: "Việc";
+      }
+    }
+
+    /* Hiệu ứng trái tim đập */
+    .heart {
+        width: 50px;
+        height: 50px;
+        margin: 50px auto;
+    }
+    .heart img {
+        width: 100%;
+        animation-name: heart-beating;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes heart-beating {
+      20% {
+        transform: scale(1.2);
+      }
+      40% {
+        transform: scale(1.5);
+      }
+      60% {
+        transform: scale(0.8);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1></h1>
+  <div class="heart">
+    <img src="https://www.pngkey.com/png/full/114-1149903_free-png-cute-emoji-heart-png-images-transparent.png" alt="heart-icon">
+  </div>
+</body>
+</html>

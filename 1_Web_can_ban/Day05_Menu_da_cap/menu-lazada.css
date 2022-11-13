@@ -1,0 +1,89 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Top links */
+#top-links {
+  width: 100%;
+  height: 25px;
+  background-color: rgba(0, 0, 0, 0.03);
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 60px;
+}
+#top-links-items {
+  display: flex;
+  align-items: center;
+}
+#top-links-items li {
+  list-style-type: none;
+  padding: 0 20px;
+}
+#top-links-items a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #0f1568;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#top-links-items a:hover {
+  color: #f36d00;
+}
+
+/* Logo */
+#logo {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 2px 0 rgb(0 0 0 / 25%);
+}
+#logo img {
+  width: 130px;
+  margin: 0 60px;
+}
+
+/* Main menu */
+.menu-box {
+  background-color: white;
+  box-shadow: 0 0 2px 0 rgb(0 0 0 / 25%);
+  width: 200px;
+  height: 400px;
+}
+.main-menu {
+  margin-left: 60px;
+  position: relative;
+}
+.main-menu li {
+  list-style-type: none;
+}
+.main-menu li:hover {
+  background-color: #eceff1;
+  cursor: pointer;
+}
+.main-menu li:hover > a {
+  color: #f36d00;
+}
+.main-menu a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #757575;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 5px 10px;
+  line-height: 2.5;
+}
+
+/* Sub menu */
+.sub-menu {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  display: none;
+}
+.main-menu li:hover .sub-menu {
+  display: block;
+}

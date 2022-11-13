@@ -1,0 +1,48 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#de-bai {
+  padding: 20px;
+  background-color: blanchedalmond;
+}
+#container {
+  padding: 20px;
+}
+.rectangle {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.left-rect {
+  width: 60%;
+  height: 100%;
+}
+.right-rect {
+  width: 40%;
+  height: 100%;
+}
+.half-size {
+  width: 100%;
+  height: 50%;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: blue;
+}
+.separator {
+  width: 10px;
+  height: 100%;
+}
+.small-rect {
+  width: 33.33%;
+  height: 100%;
+}

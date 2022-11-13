@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 05 - Menu đa cấp</title>
+    <!-- Tạo menu đa cấp như https://techmaster.vn/, sau đó style lại banner và footer của trang đó -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://techmaster.vn/resources/image/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <div id="nav-bar">
+        <div id="logo">
+          <img
+            src="https://techmaster.vn/resources/image/logo-techmaster/white/white_200x74.png"
+            alt="logo"
+          />
+        </div>
+        <div class="menu">
+          <ul class="menu-items">
+            <li><a href="#">Lộ Trình</a>
+              <ul class="sub-menu">
+                <li><a href="#">DevOps</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">Java Spring Boot Fullstack</a></li>
+                <li><a href="#">Amazon Web Service</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Doanh Nghiệp</a></li>
+            <li><a href="#">Khóa Học</a>
+              <ul class="sub-menu">
+                <li><a href="#">Onlab</a></li>
+                <li><a href="#">Trực Tuyến</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Sản Phẩm Học Viên</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div id="avatar">
+          <img
+            src="https://media.techmaster.vn/api/static/h9AuCtG0/3MQCjACu"
+            alt="avatar"
+          />
+        </div>
+      </div>
+
+      <div id="body-part">
+        <div id="banner">
+          <div id="banner-img">
+            <img src="https://media.techmaster.vn/api/static/brbgh4451coepbqoch60/WDajvtQ8" alt="banner-image">
+          </div>
+
+          <div id="list-posts">
+            <div class="post">
+              <div class="post-thumbnail">
+                <img src="https://media.techmaster.vn/api/static/bub3enc51co7s932dsk0/HwGhU7nn" alt="post-thumbnail">
+              </div>
+              <a href="https://techmaster.vn/posts/37131/10-ly-do-de-hoc-va-tro-thanh-ky-su-devops">
+                <div class="post-info">
+                  <div class="post-title">10 Lý do để học và trở thành Kỹ sư DevOps...</div>
+                  <div class="post-description">Ai cũng cố gắng để trở thành 1 DevOps. Vậy tại sao chúng ta phải trở thành Devops? Những...</div>
+                </div>
+              </a>
+            </div>
+            
+            <div class="post">
+              <div class="post-thumbnail">
+                <img src="https://media.techmaster.vn/api/static/c28g71c51cocsdfslk50/nDVnMHDq" alt="post-thumbnail">
+              </div>
+              <a href="https://techmaster.vn/posts/37080/kiem-thu-trong-spring-boot">
+                <div class="post-info">
+                  <div class="post-title">Kiểm thử trong Spring Boot...</div>
+                  <div class="post-description">Các bài test sử dụng framework được hỗ trợ trong Spring Boot...</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="post">
+              <div class="post-thumbnail">
+                <img src="https://media.techmaster.vn/api/static/c28g71c51cocsdfslk50/5AdA8w55" alt="post-thumbnail">
+              </div>
+              <a href="https://techmaster.vn/posts/37130/spring-boot-quan-he-many-to-many-trong-jpa">
+                <div class="post-info">
+                  <div class="post-title">Spring boot: Quan hệ many to many trong JPA...</div>
+                  <div class="post-description">Tìm hiểu về quan hệ many to many trong Spring Boot JPA...</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="post">
+              <div class="post-thumbnail">
+                <img src="https://media.techmaster.vn/api/static/c28g71c51cocsdfslk50/JrVfCxqH" alt="post-thumbnail">
+              </div>
+              <a href="https://techmaster.vn/posts/37134/goi-ham-javascript-voi-thymeleaf">
+                <div class="post-info">
+                  <div class="post-title">Gọi hàm JavaScript với Thymeleaf...</div>
+                  <div class="post-description">Trong hướng dẫn này, chúng ta sẽ gọi các hàm JavaScript trong một template Thymeleaf. ...</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="intro-company">
+            <div id="intro-content">
+              <h2>TechMaster - Học là có việc</h2>
+              <p>TechMaster cung cấp các khóa học từ căn bản đến chuyên sâu về Công nghệ thông tin. Định hướng Techmaster là đào tạo CNTT có tính thực tiễn áp dụng cao, đảm bảo sinh viên học trong thời gian ngắn nhưng xin được việc làm tốt.</p>
+              <div id="intro-button">
+                <a href="https://techmaster.vn/trungtam/trung-tam" target="_blank">
+                  <button type="button">Tìm hiểu về Techmaster</button>
+                </a>
+              </div>
+            </div>
+
+            <div id="intro-image">
+              <img class="img-large" src="https://techmaster.vn/resources/image/big-intro.png" alt="intro">
+              <img class="img-small-left" src="https://techmaster.vn/resources/image/BVDA.jfif" alt="intro">
+              <img class="img-small-right" src="https://techmaster.vn/resources/image/intro-2.jpg" alt="intro">
+            </div>
+        </div>
+
+        <div id="footer">
+          <div class="footer-column">
+            <ul class="footer-info">
+              <h4>CHỦ SỞ HỮU WEBSITE</h4>
+              <li><a href="#">Công ty TNHH TechMaster Vietnam Ltd</a></li>
+              <li><a href="#">Số ĐKDN: 0105392153</a></li>
+              <li><a href="#">Ngày cấp: 04-07-2011</a></li>
+              <li><a href="#">Nơi cấp: Sở Kế hoạch & Đầu tư Hà Nội</a></li>
+              <li><a href="#">Người đại diện pháp luật: Lê Minh Thu</a></li>
+              <li><a href="#">Phụ trách nội dung: Trịnh Minh Cường</a></li>              
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <ul class="footer-info">
+              <h4>GIỚI THIỆU</h4>
+              <li><a href="#">Học viện CNTT TechMaster</a></li>
+              <li><a href="#">Giảng viên</a></li>
+              <li><a href="#">Quy định</a></li>
+              <li><a href="#">Hướng dẫn mua khóa học</a></li>
+              <li><a href="#">Ưu đãi và hoàn trả học phí</a></li>
+              <li><a href="#">Bảo vệ thông tin khách hàng</a></li>              
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <ul class="footer-info">
+              <h4>TƯ VẤN TUYỂN SINH</h4>
+              <li><a href="#">Phạm Thị Mẫn - 0963023185</a></li>
+              <li><a href="#">manpham@techmaster.vn</a></li>
+              <li><a href="#">Dương Đức Thịnh - 0987273764</a></li>
+              <li><a href="#">thinh@techmaster.vn</a></li>
+              <li><a href="#">Nguyễn Thanh Hương - 0382416368</a></li>
+              <li><a href="#">huong@techmaster.vn</a></li>
+              <li><a href="#">TƯ VẤN ĐÀO TẠO DOANH NGHIỆP</a></li>
+              <li><a href="#">0902209011 - cuong@techmaster.vn</a></li>              
+            </ul>
+          </div>
+          
+          <div class="footer-column ">
+            <ul class="footer-info">
+              <h4>ĐỊA CHỈ</h4>
+              <li><a href="#">Cơ sở 1: 14 ngõ 4, Nguyễn Đình Chiểu, Quận Hai Bà Trưng, Hà Nội</a></li>
+              <li><a href="#">Cơ sở 2: Tầng 12A, tòa nhà Viwaseen Tower, số 48, Tố Hữu, Lê Văn Lương kéo dài, Hà Nội</a></li>
+              <li><a href="#">Cơ sở 3: Tầng 5, số 13 Dịch Vọng Hậu, Cầu Giấy, Hà Nội</a></li>             
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

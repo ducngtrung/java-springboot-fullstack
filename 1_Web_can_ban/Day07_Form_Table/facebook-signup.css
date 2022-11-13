@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container {
+    margin: 0 440px;
+    padding: 120px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.signup-box {
+    height: 480px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 8px;
+    padding: 15px;
+    background-color: white;
+    width: 100%;
+    position: relative;
+}
+img.close-button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+h1 {
+    color: #1c1e21;
+    font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    line-height: 38px;
+}
+p {
+    color: #606770;
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+}
+.separator {
+    border-bottom: 1px solid #dadde1;
+    margin: 12px 0;
+}
+.name-input, .date-of-birth, .gender-selector {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.input-field {
+    padding: 5px 0;
+}
+.input-field input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccd0d5;
+    color: #1d2129;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 16px;
+    background-color: #f5f6f7;
+}
+input:focus {
+    outline: none!important;
+}
+.first-name-box {
+    width: 50%;
+    padding-right: 10px;
+}
+.sur-name-box {
+    width: 50%;
+}
+.dob-label, .gender-label {
+    margin-top: 12px;
+}
+label.main-label {
+    color: #606770;
+    font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+}
+select, span {
+    width: 100%;
+    padding: 7px;
+    border-radius: 4px;
+    border: 1px solid #ccd0d5;
+    color: #1c1e21;
+    font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    height: 36px;
+    line-height: 20px;
+    position: relative;
+}
+select#day, select#month {
+    margin-right: 10px;
+}
+.radio-button {
+    height: 35px;
+    position: absolute;
+    right: 7px;
+    top: 0;
+}
+span.female-or-male {
+    margin-right: 10px;
+}
+.sign-up {
+    margin: 30px auto;
+    text-align: center;
+}
+.sign-up button {
+    width: 200px;
+    height: 36px;
+    padding: 0 32px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif!important;;
+    color: white;
+    cursor: pointer;
+    background-color: #00a400;
+}
+.sign-up button:hover {
+    background-color: #63a749;
+}

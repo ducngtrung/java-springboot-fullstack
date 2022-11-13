@@ -1,0 +1,45 @@
+p, ul, li, div, nav {
+  padding: 0;
+  margin: 0;
+}
+#menu {
+  overflow: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* Main menu */
+.main-menu {
+  background-color: #0c8fff;
+  min-width: 210px;
+  float: left;
+}
+#menu ul {
+  list-style-type: none;
+}
+#menu ul li a {
+  padding: 10px 15px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+#menu ul li a:hover {
+  background-color: #007ee9;
+}
+
+/* Sub menu */
+#menu ul li:hover > ul {
+  left: 200px;
+}
+#menu ul li > ul {
+  position: absolute;
+  background-color: #333;
+  top: 0;
+  left: -200px;
+  min-width: 210px;
+  z-index: -1;
+  height: 100%;
+}
+#menu ul li > ul li a:hover {
+  background-color: #2e2e2e;
+}

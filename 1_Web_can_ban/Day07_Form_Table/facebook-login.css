@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(240, 242, 245);
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+#container {
+    margin: 0 165px;
+    padding: 100px 0;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+#intro {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.fb_logo {
+    margin-left: -28px;
+    margin-bottom: -10px;
+}
+.fb_logo img {
+    height: 106px;
+}
+#intro p {
+    width: 500px;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    color: #1c1e21;
+}
+#login-area {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#login-box {
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 8px;
+    margin: 40px 0 0;
+    padding: 15px 0;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-field {
+    padding: 7px 0;
+}
+input {
+    width: 100%;
+    padding: 15px 20px; 
+    border-radius: 7px;
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    font-size: 17px;
+}
+input:focus {
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+    caret-color: #1877f2;
+    outline: none!important;
+}
+.login, .create-new, .forgot-password {
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+}
+button {
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    line-height: 48px;
+    padding: 0 16px;
+    color: white;
+    cursor: pointer;
+}
+.login button {
+    width: 360px;
+    font-size: 20px;
+    background-color: #1877f2;
+}
+.login:hover button {
+    background-color: #166fe5;
+}
+.create-new button {
+    width: 200px;
+    font-size: 17px;
+    background-color: #42b72a;
+}
+.create-new:hover button {
+    background-color: #36a420;
+}
+.forgot-password a {
+    color: #1877f2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.separator {
+    border-bottom: 1px solid #dadde1;
+    margin: 7px 0;
+}
+#ads {
+    margin-top: 30px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#ads a {
+    color: #1c1e21;
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+}

@@ -1,0 +1,27 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "2_Java_Core/Day08_WebSimulation/ngxnam-websimulation/libs/json-20220320.jar",
+        "2_Java_Core/Day08_WebSimulation/libs/json-20220320.jar"
+    ],
+    "java.project.sourcePaths": [
+        "4_Algorithms/Day12_Tree",
+        "4_Algorithms/Day11_HashSet_HashMap",
+        "4_Algorithms/Day10_Stack_Queue",
+        "4_Algorithms/Day09_LinkedList",
+        "4_Algorithms/Day08_AlgorithmicComplexity",
+        "4_Algorithms/Day07_Kiem_tra_giua_khoa",
+        "4_Algorithms/Day06_Sort_advanced",
+        "4_Algorithms/Day05_BinarySearch",
+        "4_Algorithms/Day04_Recursion",
+        "4_Algorithms/Day03_Sort",
+        "4_Algorithms/Day02_String",
+        "4_Algorithms/Day01_Array",
+        "3_Database_MySQL",
+        "2_Java_Core/Day14_15_16_FinalProject",
+        "2_Java_Core/Day13_BaiKiemTraSo2",
+        "2_Java_Core/Day08_WebSimulation",
+        "2_Java_Core/Day02_String_DateTime_Scanner",
+        "4_Algorithms/Day14_Kiem_tra_cuoi_khoa"
+    ]
+}

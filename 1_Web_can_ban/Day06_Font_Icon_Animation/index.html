@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 06 - Font, Icon, Animation</title>
+
+    <!-- Connect font chữ mới từ Google Font: https://fonts.google.com -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <!-- Connect đến bộ icon từ Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    
+    <style>
+        /* Áp dụng font vừa connect */
+        p {
+            font-family: 'Lato', sans-serif;
+            font-size: 20px;
+            opacity: 0.7;
+        }
+        i {
+            font-size: 20px;
+        }
+
+        /* Transition */
+        .rectangle {
+            margin: 20px 100px;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            transition-property: width height background-color;
+            /* Hiệu ứng sẽ xảy ra khi có sự thay đổi ở cả 3 thuộc tính width, height, background-color
+            của element "rectangle". Tức là phải có một sự kiện làm thay đổi các thuộc tính trên, ví dụ 
+            như sự kiện :hover */
+            transition-duration: 2s;
+            transition-delay: 200ms;
+            transition-timing-function: linear;
+            /* 4 dòng trên có thể viết gọn lại thành transition: all 2s 200ms linear; */
+        }
+        .rectangle:hover {
+            width: 300px;
+            height: 150px;
+            background-color: red;
+            transform: rotate(20deg);
+        } 
+
+        /* Animation */
+        .rectangle_2, .rectangle_3  {
+            width: 150px;
+            height: 150px;
+            margin: 20px auto;
+            background-color: blue;
+        }
+        .rectangle_2 {
+            animation-name: change-color;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        .rectangle_3 {
+            animation-name: change-many-colors;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        /* Keyframes hold what styles the element will have at certain times. */
+        @keyframes change-color {
+            from {
+                background-color: blue;
+            }
+            to {
+                background-color: orange;
+            }
+            /* "from" and "to" represent 0% (start) and 100% (complete) */
+        }
+        @keyframes change-many-colors {
+            20% {
+                background-color: green;
+            }
+            40% {
+                background-color: burlywood;
+            }
+            60% {
+                background-color: blueviolet;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>Almost before we knew it, we had left the ground.</p>
+    
+    <!-- Lấy icon từ Font Awesome -->
+    <i class="fa-solid fa-house"></i>
+    
+    <!-- Transition -->
+    <div class="rectangle"></div>
+
+    <!-- Animation -->
+    <div class="rectangle_2"></div>
+    <div class="rectangle_3"></div>
+</body>
+</html>

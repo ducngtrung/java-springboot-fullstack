@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTVN 6 - cách 2</title>
+    <style>
+        .container {
+            position: relative;
+        }
+        h2 {
+            position: absolute;
+            line-height: 70px;
+            font-size: 30px;
+            width: 100%;
+            text-align: center;
+            animation-name: change-background;
+            animation-duration: 5s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: backwards;
+            animation-iteration-count: infinite;
+        }
+        h2.one {
+            animation-delay: 0s;
+            background-color: #d27fb9;
+        }
+        h2.two {
+            animation-delay: 1s;
+            background-color: rgb(210, 210, 164);
+        }
+        h2.three {
+            animation-delay: 2s;
+            background-color: rgb(152, 201, 152);
+        }
+        h2.four {
+            animation-delay: 3s;
+            background-color: rgb(186, 166, 128);
+        }
+        h2.five {
+            animation-delay: 4s;
+            background-color: rgb(142, 142, 188);
+        }
+        @keyframes change-background {
+            0% {
+                opacity: 0;
+            }
+            1% {
+                opacity: 1;
+            }
+            30% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="one">TECHMASTER</h2>
+        <h2 class="two">HỌC</h2>
+        <h2 class="three">LÀ</h2>
+        <h2 class="four">CÓ</h2>
+        <h2 class="five">VIỆC</h2>
+    </div>
+</body>
+</html>
