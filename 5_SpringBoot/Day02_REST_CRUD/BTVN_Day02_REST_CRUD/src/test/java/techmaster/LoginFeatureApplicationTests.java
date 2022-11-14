@@ -1,10 +1,10 @@
-package vn.techmaster.demomavenproject;
+package techmaster;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoMavenProjectApplicationTests {
+class LoginFeatureApplicationTests {
 
     @Test
     void contextLoads() {

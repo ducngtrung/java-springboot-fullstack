@@ -6,19 +6,18 @@ import vn.techmaster.demomavenproject.database.DB;
 import vn.techmaster.demomavenproject.model.Book;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public class BookRepository {
-    public List<Book> getAllBooks() {
+    public List<Book> findAll() {
         return DB.bookList;
     }
 
-    public Book getBookById(int id) {
-        for (Book book: DB.bookList) {
-            if (book.getId() == id) {
-                return book;
-            }
-        }
-        return null;
+    public Optional<Book> findById(int id) { // Dùng Option vì dữ liệu trả về có thể null (nếu id cần tìm không tồn tại)
+        return DB.bookList
+                .stream()
+                .filter(book -> book.getId() == id)
+                .findFirst();
     }
 }

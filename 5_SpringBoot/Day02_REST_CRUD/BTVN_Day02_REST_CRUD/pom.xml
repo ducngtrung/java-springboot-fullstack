@@ -8,10 +8,10 @@
         <version>2.7.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>vn.techmaster</groupId>
-    <artifactId>demo-maven-project</artifactId>
+    <groupId>techmaster</groupId>
+    <artifactId>Login-Feature</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo-maven-project</name>
+    <name>Login-Feature</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>17</java.version>

@@ -1,13 +1,13 @@
-package vn.techmaster.demomavenproject;
+package techmaster;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoMavenProjectApplication {
+public class LoginFeatureApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoMavenProjectApplication.class, args);
+        SpringApplication.run(LoginFeatureApplication.class, args);
     }
 
 }

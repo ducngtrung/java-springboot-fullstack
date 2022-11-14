@@ -12,6 +12,4 @@ public class DB {
             new Book(2, "Toi Thay Hoa Vang Tren Co Xanh", 2021),
             new Book(3, "Mat Biec", 2018)
     ));
-
-
 }

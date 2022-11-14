@@ -8,6 +8,7 @@ import vn.techmaster.demomavenproject.repository.BookRepository;
 import vn.techmaster.demomavenproject.request.UpsertBookRequest;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.Random;
 
 @Service
@@ -17,16 +18,16 @@ public class BookService {
     private BookRepository bookRepository;
 
     public List<Book> getAllBooks() {
-        return bookRepository.getAllBooks();
+        return bookRepository.findAll();
     }
 
     public Book getBookById(int id) {
-//        for (Book book: bookList) {
-//            if (book.getId() == id) {
-//                return book;
-//            }
-//        }
-        return null;
+        Optional<Book> bookOptional = bookRepository.findById(id);
+        // Nếu bookOptional có dữ liệu thì trả về dữ liệu bên trong, nếu không có dữ liệu thì throw exception
+        if (bookOptional.isPresent()) {
+            return bookOptional.get();
+        }
+        throw new
     }
 
     public Book createBook(UpsertBookRequest request) {
@@ -40,7 +41,7 @@ public class BookService {
 //        );
 //        bookList.add(newBook);
 //        return newBook;
-        return  null;
+        return null;
     }
 
     public Book updateBookById(int id, UpsertBookRequest request) {
