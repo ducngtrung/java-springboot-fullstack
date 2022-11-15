@@ -23,7 +23,7 @@ public class JobController {
         return jobService.getRandomJob();
     }
 
-    // GET api/v1/jobs/sort : trả về danh sách job được sắp xếp giảm dần hoặc tăng dần theo lương tối đa (yêu cầu sử dụng @RequestParam để lấy thứ tự sắp xếp ("desc" hoặc "asc") từ request query)
+    // GET api/v1/jobs/sort?max_salary=desc : trả về danh sách job được sắp xếp giảm dần hoặc tăng dần theo lương tối đa (yêu cầu sử dụng @RequestParam để lấy thứ tự sắp xếp ("desc" hoặc "asc") từ request query)
     @GetMapping("jobs/sort")
     public List<Job> sortJobsByMaxSalary(@RequestParam String max_salary) {
         return jobService.sortJobsByMaxSalary(max_salary);
