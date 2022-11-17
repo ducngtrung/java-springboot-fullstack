@@ -23,10 +23,11 @@ public class CustomExceptionHandler {
         return new ErrorResponse(HttpStatus.NOT_FOUND, exception.getMessage());
     }
 
-//    // Xử lý các exception khác
-//    @ExceptionHandler(Exception.class)
-//    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-//    public ErrorResponse handleOtherExceptions(Exception exception) {
-//        return new ErrorResponse(HttpStatus.INTERNAL_SERVER_ERROR, exception.getMessage());
-//    }
+    // Xử lý các exception khác
+    @ExceptionHandler(Exception.class)
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+    public ErrorResponse handleOtherExceptions(Exception exception) {
+        return new ErrorResponse(HttpStatus.INTERNAL_SERVER_ERROR, exception.getMessage());
+    }
+
 }

@@ -17,13 +17,18 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.stream.Stream;
 
 @Service
 public class UserService {
 
     @Autowired
     private UserRepository userRepository;
+
+    private final Faker faker;
+
+    private UserService(Faker faker) {
+        this.faker = faker;
+    }
 
     public List<User> getAllUsers() {
         return userRepository.findAll();
@@ -48,12 +53,13 @@ public class UserService {
         int totalPage = 0;
         if (size%limitNum == 0) {
             totalPage = size/limitNum;
-        } else {
-            totalPage = size/limitNum + 1;
-        }
-        
+        } else totalPage = size/limitNum + 1;
+
         int beginIndex = (pageNum-1)*limitNum;
         int endIndex = beginIndex + limitNum - 1;
+        if (endIndex > (size-1)) {
+            endIndex = size-1;
+        }
 
         List<UserInfoResponse> userInfoResponseList = new ArrayList<>();
         for (int i = beginIndex; i <= endIndex; ++i) {
@@ -147,16 +153,14 @@ public class UserService {
     }
 
     public String createNewPasswordById(int id) {
-        Random rd = new Random();
         for (User user : getAllUsers()) {
             if (user.getId() == id) {
-                String newPassword = String.valueOf(rd.nextInt(11111111, 99999999));
+                String newPassword = faker.internet().password(8, 15, true, true, true);
                 user.setPassword(newPassword);
-                return newPassword;
+                return "new password: " + newPassword;
             }
         }
         throw new NotFoundException("không tìm thấy user");
     }
-
 
 }
