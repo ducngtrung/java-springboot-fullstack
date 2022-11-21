@@ -5,25 +5,22 @@
     <meta name="viewport" content="width=device-width" />
     <title>Apply JavaScript example</title>
     <!-- Cách 1: -->
-    <!-- <script src="variable.js" defer></script> -->
+    <script src="variable.js" defer></script>
   </head>
   <body>
     <button>Calculate BMI</button>
     <!-- Cách 2 -->
-    <script>
-      function calculateBMI() {
+    <!-- <script>
+      function calculateBMI(height, weight) {
           var BMI = weight / (height**2);
           console.log(BMI);
       }
-
-      var height = 1.73;
-      var weight = 69;
-
+      
       const buttons = document.querySelectorAll('button');
-
+      
       for (const button of buttons) {
-          button.addEventListener('click', calculateBMI);
+          button.addEventListener('click', calculateBMI(1.73, 69));
       }
-    </script>
+    </script> -->
   </body>
 </html>
