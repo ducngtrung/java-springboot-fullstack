@@ -24,18 +24,16 @@ calculateBMI(1.73, 69);
 // sổ console theo dạng chuỗi. Ví dụ: “Mai nhỏ hơn Tuấn 2 tuổi”, “Minh
 // bằng tuổi Quang”, “Lâm lớn hơn Phong 3 tuổi”.
 
-name1 = "Mai"
-name2 = "Tuấn"
-age1 = 20
-age2 = 18
-
-if (age1 > age2) {
-    console.log("\n" + name1 + " lớn hơn " + name2 + " " + (age1-age2) + " tuổi")
-} else if (age1 == age2) {
-    console.log("\n" + name1 + " bằng tuổi " + name2)
-} else {
-    console.log("\n" + name1 + " nhỏ hơn " + name2 + " " + (age2-age1) + " tuổi")
+function compare_age(name1, age1, name2, age2) {
+    if (age1 > age2) {
+        console.log("\n" + name1 + " lớn hơn " + name2 + " " + (age1-age2) + " tuổi")
+    } else if (age1 == age2) {
+        console.log("\n" + name1 + " bằng tuổi " + name2)
+    } else {
+        console.log("\n" + name1 + " nhỏ hơn " + name2 + " " + (age2-age1) + " tuổi")
+    }
 }
+compare_age("Mai", 10, "Tuấn", 18)
 
 
 // BÀI 3:
