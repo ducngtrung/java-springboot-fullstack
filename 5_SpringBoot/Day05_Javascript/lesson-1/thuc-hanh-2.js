@@ -33,7 +33,7 @@ function compare_age(name1, age1, name2, age2) {
         console.log("\n" + name1 + " nhỏ hơn " + name2 + " " + (age2-age1) + " tuổi")
     }
 }
-compare_age("Mai", 10, "Tuấn", 18)
+compare_age("Mai", 20, "Tuấn", 18)
 
 
 // BÀI 3:
@@ -43,17 +43,14 @@ compare_age("Mai", 10, "Tuấn", 18)
 // của sổ console chi tiết của hóa đơn (Gồm tiền dịch vụ sử dụng, tip và
 // tổng tiền cần thanh toán).
 
-function print_invoice(amount, tip) {
+function print_invoice(amount) {
+    if ((amount >= 100) && (amount <= 400)) {
+        tip = amount*10/100;
+    } else {
+        tip = amount*15/100;
+    }
     console.log("\nTiền dịch vụ: " + amount);
     console.log("Tiền tip: " + tip);
     console.log("\tTổng tiền: " + (amount+tip));
 }
-
-amount = 450;
-if ((amount >= 100) && (amount <= 400)) {
-    tip = amount*10/100;
-} else {
-    tip = amount*15/100;
-}
-
-print_invoice(amount, tip)
+print_invoice(450)
