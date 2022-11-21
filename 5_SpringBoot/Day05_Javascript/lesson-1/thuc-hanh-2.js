@@ -26,11 +26,11 @@ calculateBMI(1.73, 69);
 
 function compare_age(name1, age1, name2, age2) {
     if (age1 > age2) {
-        console.log(`${name1} lớn hơn ${name2} ${age1-age2} tuổi`);
+        console.log(`\n${name1} lớn hơn ${name2} ${age1-age2} tuổi`);
     } else if (age1 == age2) {
-        console.log(`${name1} bằng tuổi ${name2}`);
+        console.log(`\n${name1} bằng tuổi ${name2}`);
     } else {
-        console.log(`${name1} nhỏ hơn ${name2} ${age1-age2} tuổi`);
+        console.log(`\n${name1} nhỏ hơn ${name2} ${age1-age2} tuổi`);
     }
 }
 compare_age("Mai", 20, "Tuấn", 18)
