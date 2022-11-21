@@ -4,7 +4,7 @@
 // cân nặng đưa vào.
 
 function calculateBMI(height, weight) {
-    var BMI = weight / (height**2);
+    let BMI = weight / (height**2);
     if (BMI < 18.5) {
         console.log("\nChỉ số BMI: " + BMI + " - Underweight");
     } else if (BMI < 24.9) {
