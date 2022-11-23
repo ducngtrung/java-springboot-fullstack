@@ -1,3 +1,13 @@
+// Bài 1: 
+// Viết một hàm nhận tham số là một số. Hàm trả về kết quả báo số đó là số chẵn hay số lẻ.
+
+function checkNumber(number) {
+    return ((number % 2) == 0) ? "số chẵn" : "số lẻ"
+}
+
+checkNumber(11);
+
+
 // Bài 2: 
 // Viết một hàm tính diện tích của hình tròn, tham số truyền vào là bán kính hình tròn đó.
 
@@ -21,3 +31,13 @@ function bai3(input) {
 }
 
 bai3("15.5px")
+
+
+// Bài 4: 
+// Viết một hàm trả về một số ngẫu nhiên từ 3 đến 8.
+
+function randomInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+randomInteger(3, 8);
