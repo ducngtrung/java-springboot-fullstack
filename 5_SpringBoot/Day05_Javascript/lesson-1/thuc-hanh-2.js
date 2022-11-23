@@ -44,6 +44,7 @@ compare_age("Mai", 20, "Tuấn", 18)
 // tổng tiền cần thanh toán).
 
 function print_invoice(amount) {
+    let tip;
     if ((amount >= 100) && (amount <= 400)) {
         tip = amount*10/100;
     } else {
