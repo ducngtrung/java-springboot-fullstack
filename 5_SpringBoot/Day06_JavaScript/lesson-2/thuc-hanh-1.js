@@ -29,7 +29,7 @@ calculateBMI(1.73, 69);
 // cho 2 biến này. Kết quả chỉ cần báo là ai lớn hơn ai bao nhiêu tuổi.
 // Không xét đến trường hợp bằng tuổi.
 
-function compare_age(name1, age1, name2, age2) {
+function compareAge(name1, age1, name2, age2) {
     if (age1 == age2) {
         console.log(`${name1} bằng tuổi ${name2}`);
     } else {
@@ -39,7 +39,7 @@ function compare_age(name1, age1, name2, age2) {
     }
 }
 
-compare_age("Mai", 18, "Tuấn", 20);
+compareAge("Mai", 18, "Tuấn", 20);
 
 
 // Bài 3: 
