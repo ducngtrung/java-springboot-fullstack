@@ -7,10 +7,11 @@
 //     Nếu số nhập vào vượt giới hạn 70km/h 10 điểm phạt => Log ra License Suspended
 
 function checkSpeed(speed) {
+    let pointSurpass = (speed-70)/5;
     if (speed <= 70) {
         console.log("Good safe driving");
-    } else if ((speed-70)/5 <= 10) {
-        console.log(`Speed Limit Crossed by ${(speed-70)/5} point(s)`);
+    } else if (pointSurpass <= 10) {
+        console.log(`Speed Limit Crossed by ${pointSurpass} point(s)`);
     } else {
         console.log("License Suspended");
     }
