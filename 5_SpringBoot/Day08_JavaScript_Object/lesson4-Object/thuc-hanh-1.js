@@ -58,10 +58,3 @@ var petArray = [
         age: 3
     }
 ];
-
-
-// Bài 6: Viết một hàm nhận tham số là một mảng giống như mảng của bài 5. Hàm tìm ra con vật có tuổi lớn nhất và trả về object thông tin về con vật đó.
-
-function findMaxAge(array) {
-    
-}
