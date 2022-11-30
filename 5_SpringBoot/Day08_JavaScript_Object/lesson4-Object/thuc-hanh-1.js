@@ -33,7 +33,7 @@ console.log(createString(pet));
 // Bài 5: Tạo một biến có giá trị là một mảng chứa 3 object giống bài 1. Thông tin về các con vật không được trùng nhau quá nhiều và tuổi của chúng phải khác nhau.
 
 var petArray = [
-    pet1 = {
+    {
         type: "dog",
         name: "alex",
         breed: "chihuahua",
@@ -41,7 +41,7 @@ var petArray = [
         favoriteFood: ["sausage, bread"],
         age: 2
     },
-    pet2 = {
+    {
         type: "cat",
         name: "arthur",
         breed: "Vietnamese cat",
@@ -49,7 +49,7 @@ var petArray = [
         favoriteFood: ["sausage"],
         age: 4
     },
-    pet3 = {
+    {
         type: "bird",
         name: "rodri",
         breed: "pigeon",
