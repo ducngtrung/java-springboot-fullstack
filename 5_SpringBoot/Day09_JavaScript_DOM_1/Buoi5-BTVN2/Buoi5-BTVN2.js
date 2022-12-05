@@ -44,7 +44,7 @@ function question2(number) {
   
   uniqueWordArray.forEach(word => {
     if (word.length >= number) {
-      text = text.replace(word, `<b>${word}</b>`);
+      text = text.replace(word, `<span style="color:red">${word}</span>`);
     }
   });
   paragraph.innerHTML = text;
