@@ -19,7 +19,7 @@ btn2.addEventListener("click", function decrease(){
 // Bài 2: Giả sử cửa sổ trình duyệt của bạn là một căn phòng, nền trắng là đang bật đèn. Hãy tạo một nút button để tắt đèn của căn phòng này. Hãy quy định content hoặc style cho nút này để người dùng biết ấn vào sẽ thế nào (Ví dụ đèn đang sáng thì content ghi là “On”, ấn tắt đi thì chuyển sang “Off”). Có thể thêm icon hình bóng đèn và đổi màu nền của button sang màu tối hơn khi đèn tắt.
 
 let btn3 = document.getElementById("button").querySelector(".btn");
-btn3.addEventListener("click", function swithLight(){
+btn3.addEventListener("click", function switchLight(){
     let btnText = btn3.innerText;
     if (btnText == "On") {
         btn3.textContent = "Off";
