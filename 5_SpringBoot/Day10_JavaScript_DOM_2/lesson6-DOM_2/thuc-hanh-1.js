@@ -23,10 +23,10 @@ btn3.addEventListener("click", function switchLight(){
     let btnText = btn3.innerText;
     if (btnText == "Light On") {
         btn3.textContent = "Light Off";
-        document.getElementById("button").style.backgroundColor = "gray";
+        document.getElementById("button").style.background = "gray";
     } else {
         btn3.textContent = "Light On";
-        document.getElementById("button").style.backgroundColor = "white";
+        document.getElementById("button").style.background = "white";
     }
 });
 
