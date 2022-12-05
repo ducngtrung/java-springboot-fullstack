@@ -21,11 +21,11 @@ btn2.addEventListener("click", function decrease(){
 let btn3 = document.getElementById("button").querySelector(".btn");
 btn3.addEventListener("click", function switchLight(){
     let btnText = btn3.innerText;
-    if (btnText == "On") {
-        btn3.textContent = "Off";
+    if (btnText == "Light On") {
+        btn3.textContent = "Light Off";
         document.getElementById("button").style.backgroundColor = "gray";
     } else {
-        btn3.textContent = "On";
+        btn3.textContent = "Light On";
         document.getElementById("button").style.backgroundColor = "white";
     }
 });
