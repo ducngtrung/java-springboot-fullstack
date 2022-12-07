@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .result {
+                width: 300px;
+                height: 400px;
+                border: 1px solid #ccc;
+            }
+            img {
+                max-width: 100%;
+                display: block;
+                margin: auto;
+                object-fit: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Breeds List</h2>
+        <div class="breed">
+            <select id="breed-list">
+                <!-- Render danh sách breed vào đây -->
+            </select>
+            <button id="btn">Get sub-breed</button>
+        </div>
+
+        <h2>Sub-breeds List</h2>
+        <div class="sub-breed">
+            <ul id="sub-breed-list">
+                <!-- Render danh sách sub-breed vào đây -->
+            </ul>
+        </div>
+
+        <div class="result">
+            <img id="image" src="" alt="dog" />
+        </div>
+
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="./main.js" defer></script>
+    </body>
+</html>

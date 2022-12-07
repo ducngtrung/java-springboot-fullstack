@@ -5,11 +5,11 @@ const select = document.getElementById('breed-list');
 // Hàm gọi API để lấy danh sách breed
 function getBreedList() {
     let response = axios.get("https://dog.ceo/api/breeds/list/all");
-    // debugger;
     response
-        // Sau khi có data thì hiển thị kết quả lên giao diện
-        .then(function (res) {
-            renderBreed(res.data.message); // res.data.message la một map chứa danh sách breed
+        // Sau khi có data thì gọi hàm renderBreed
+        .then(function(res) {
+            // debugger;
+            renderBreed(res.data.message); // res.data.message là một json chứa danh sách breed
         })
         .catch(error => {
             console.log(error);
@@ -37,9 +37,9 @@ function getBreedImage() {
     // console.log(requestURL);
 
     let response = axios.get(requestURL);
-    // debugger;
     response
-        .then(function (res) {
+        // Sau khi có data thì hiển thị ảnh
+        .then(function(res) {
             // Gán image URL cho thẻ image
             image.src = res.data.message;
         })
