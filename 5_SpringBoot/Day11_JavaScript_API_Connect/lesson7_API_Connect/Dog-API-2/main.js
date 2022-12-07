@@ -16,7 +16,7 @@ function getBreedList() {
         })
 }
 
-// Hàm duyệt qua từng key trong danh sách breed -> tạo thẻ option tương ứng -> dùng DOM để gắn option vào trong thẻ select
+// Hàm duyệt qua từng key trong danh sách breed -> tạo thẻ option tương ứng -> dùng DOM để đưa thẻ option vào trong thẻ select
 function renderBreed(breedList) {
     Object.keys(breedList).forEach(breed => {
         let newOption = document.createElement("option");
