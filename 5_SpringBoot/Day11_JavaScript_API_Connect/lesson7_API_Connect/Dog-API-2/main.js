@@ -8,7 +8,7 @@ function getBreedList() {
     // debugger;
     response
         // Sau khi có data thì hiển thị kết quả lên giao diện
-        .then(function(res) {
+        .then(function (res) {
             renderBreed(res.data.message); // res.data.message la một map chứa danh sách breed
         })
         .catch(error => {
@@ -28,14 +28,16 @@ function renderBreed(breedList) {
 
 // Hàm gọi API để lấy ảnh breed theo tên
 function getDogImage() {
-    let requestURL = "".concat(document.querySelectorAll("p")[0].innerText, 
-                                document.getElementById("breed-list").value,
-                                document.querySelectorAll("p")[1].innerText);
+    let requestURL = "".concat(
+        document.querySelectorAll("p")[0].innerText,
+        document.getElementById("breed-list").value,
+        document.querySelectorAll("p")[1].innerText
+        );
     console.log(requestURL);
     let response = axios.get(requestURL);
     // debugger;
     response
-        .then(function(res) { 
+        .then(function (res) {
             // Gán image URL cho thẻ image
             image.src = res.data.message;
         })
