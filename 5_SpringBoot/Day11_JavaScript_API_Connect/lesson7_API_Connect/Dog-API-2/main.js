@@ -27,7 +27,7 @@ function renderBreed(breedList) {
 }
 
 // Hàm gọi API để lấy ảnh breed theo tên
-function getDogImage() {
+function getBreedImage() {
     // Lấy ra URL của breed đang được select
     let requestURL = "".concat(
         document.querySelectorAll("p")[0].innerText,
@@ -54,5 +54,5 @@ getBreedList();
 
 // Lắng nghe sự kiện khi click vào nút "Fetch" để hiển thị ảnh breed
 btn.addEventListener("click", function () {
-    getDogImage();
+    getBreedImage();
 })
