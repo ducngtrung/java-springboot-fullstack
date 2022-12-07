@@ -33,9 +33,9 @@ function getDogImage() {
         document.querySelectorAll("p")[0].innerText,
         document.getElementById("breed-list").value,
         document.querySelectorAll("p")[1].innerText
-        );
+    );
     // console.log(requestURL);
-    
+
     let response = axios.get(requestURL);
     // debugger;
     response
