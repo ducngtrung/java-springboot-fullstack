@@ -44,7 +44,7 @@ function getSubBreedList() {
         })
 }
 
-// Hàm duyệt qua từng key trong danh sách sub-breed -> tạo thẻ li tương ứng -> dùng DOM để đưa thẻ li vào trong thẻ ul
+// Hàm duyệt qua từng phần tử trong mảng sub-breed -> tạo thẻ li tương ứng -> dùng DOM để đưa thẻ li vào trong thẻ ul
 function renderSubBreed(subBreedList) {
     // Refresh (làm rỗng) list
     list.textContent = "";
@@ -86,6 +86,8 @@ getBreedList();
 
 // Lắng nghe sự kiện khi click vào nút "Get sub-breed" để lấy danh sách sub-breed
 btn.addEventListener("click", function () {
+    // Xóa ảnh sub-breed hiện tại (nếu có)
+    image.src = "";
     getSubBreedList();
 })
 

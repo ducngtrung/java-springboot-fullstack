@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Dictionary</title>
+</head>
+<body>
+    <h1>Dictionary</h1>
+    <div class="search-form">
+        <form id="search">
+            <input type="text" id="search-field" name="word-search" value="apple">
+            <button type="button" id="submit-button">Search</button>
+        </form>
+    </div>
+    <div class="result">
+        <div class="text-result" >
+            <p class="result-heading">Part of Speech</p>
+            <div class="text-result-content" id="part-of-speech">
+                <!-- Render loại từ (danh từ, tính từ,… ) vào đây -->
+            </div>
+        </div>
+        <div class="text-result">
+            <p class="result-heading">Definition</p>
+            <div class="text-result-content" id="definitions">
+                <!-- Render giải nghĩa của từ vào đây -->
+            </div>
+        </div>
+        <div id="word-audio">
+            <!-- Render audio của từ vào đây -->
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./main.js" defer></script>
+</body>
+</html>
