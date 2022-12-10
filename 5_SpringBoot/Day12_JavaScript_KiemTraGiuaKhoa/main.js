@@ -46,11 +46,11 @@ function getWeatherData() {
 
 function renderData(result) {
     document.getElementById(`card-${count}`).getElementsByClassName('city')[0].innerHTML = result.city_name;
-    document.getElementById(`card-${count}`).getElementsByClassName('datetime')[0].innerHTML = "Date and time: " + result.ob_time;
+    document.getElementById(`card-${count}`).getElementsByClassName('datetime')[0].innerHTML = "Date time observed: " + result.ob_time;
     document.getElementById(`card-${count}`).getElementsByClassName('description')[0].innerHTML = result.weather.description;
     document.getElementById(`card-${count}`).getElementsByClassName('humidity')[0].innerHTML = "Humidity: " + result.rh + " %";
     document.getElementById(`card-${count}`).getElementsByClassName('temperature')[0].innerHTML = result.temp;
-    document.getElementById(`card-${count}`).getElementsByClassName('weather-icon')[0].querySelector('img').src = `https://www.weatherbit.io/static/img/icons/${result.weather.icon}.png`;
+    document.getElementById(`card-${count}`).getElementsByClassName('weather-icon')[0].src = `https://www.weatherbit.io/static/img/icons/${result.weather.icon}.png`;
     document.getElementById(`card-${count}`).getElementsByClassName('sunrise-time')[0].innerHTML = "Sunrise time (UTC): " + result.sunrise;
     document.getElementById(`card-${count}`).getElementsByClassName('sunset-time')[0].innerHTML = "Sunset time (UTC): " + result.sunset;
 }
@@ -80,7 +80,7 @@ removeBtn.addEventListener("click", function () {
         card.getElementsByClassName('description')[0].innerHTML = "";
         card.getElementsByClassName('humidity')[0].innerHTML = "";
         card.getElementsByClassName('temperature')[0].innerHTML = "";
-        card.getElementsByClassName('weather-icon')[0].innerHTML = "";
+        card.getElementsByClassName('weather-icon')[0].src = "";
         card.getElementsByClassName('sunrise-time')[0].innerHTML = "";
         card.getElementsByClassName('sunset-time')[0].innerHTML = ""
     });
