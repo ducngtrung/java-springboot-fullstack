@@ -44,6 +44,24 @@ function getWeatherData() {
         })
 }
 
+// // Cách 2:
+// function getWeatherData() {
+//     // Lấy ra city đã được nhập ở ô tìm kiếm
+//     let cityToSearch = document.getElementById('search-field').value;
+//     submitBtn.addEventListener("click", async function () {
+//         try {
+//             let response = axios.get(`https://api.weatherbit.io/v2.0/current?&city=${cityToSearch}&key=${apiKey}`);
+//             result = response.data.data[0];
+//             ++count;
+//             if (count <= 3) {
+//                 renderData(result);
+//             }
+//         } catch (error) {
+//             console.log(error);
+//         }
+//     });
+// }
+
 function renderData(result) {
     document.getElementById(`card-${count}`).getElementsByClassName('city')[0].innerHTML = result.city_name;
     document.getElementById(`card-${count}`).getElementsByClassName('datetime')[0].innerHTML = "Date time observed: " + result.ob_time;
