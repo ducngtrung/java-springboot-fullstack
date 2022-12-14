@@ -1,12 +1,10 @@
-package techmaster.exception;
+package techmaster.todolist.exception;
 
+import techmaster.todolist.response.ErrorResponse;
 import org.springframework.http.HttpStatus;
-import org.springframework.validation.FieldError;
-import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import techmaster.response.ErrorResponse;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -20,19 +18,6 @@ public class CustomExceptionHandler {
     @ResponseStatus(HttpStatus.NOT_FOUND)
     public ErrorResponse handleNotFoundException(NotFoundException exception) {
         return new ErrorResponse(HttpStatus.NOT_FOUND, exception.getMessage());
-    }
-
-    // Xử lý validation error (sẽ học ở Day03_Bean_Validation)
-    @ExceptionHandler(MethodArgumentNotValidException.class)
-    @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public ErrorResponse handleValidationException(MethodArgumentNotValidException exception) {
-        Map<String, String> errors = new HashMap<>();
-        exception.getBindingResult().getAllErrors().forEach((error) -> {
-            String fieldName = ((FieldError) error).getField();
-            String errorMessage = error.getDefaultMessage();
-            errors.put(fieldName, errorMessage);
-        });
-        return new ErrorResponse(HttpStatus.BAD_REQUEST, errors);
     }
 
     // Xử lý các exception khác
