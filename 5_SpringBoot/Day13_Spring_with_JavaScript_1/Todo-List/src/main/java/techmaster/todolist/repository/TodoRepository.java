@@ -27,6 +27,8 @@ public class TodoRepository {
     }
 
     public Optional<Todo> findById(int id) {
-        return todoList.stream().filter(todo -> todo.getId() == id).findFirst();
+        return todoList.stream()
+                .filter(todo -> todo.getId() == id)
+                .findFirst();
     }
 }

@@ -121,4 +121,3 @@ public class UserController {
         return ResponseEntity.noContent().build(); // status code: 204
     }
 }
-
