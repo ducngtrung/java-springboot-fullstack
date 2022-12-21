@@ -72,14 +72,14 @@ public class UserController {
         userService.updateAvatarById(id, request);
     }
 
-    // #8 PUT : api/v1/users/{id}/update-password : Cập nhật ảnh avatar của user
+    // #8 PUT : api/v1/users/{id}/update-password : Đổi mật khẩu của user
     @PutMapping("users/{id}/update-password")
     public void updatePasswordById(@PathVariable int id, @RequestBody UpdatePasswordRequest request) {
         userService.updatePasswordById(id, request);
     }
 
-    // #9 PUT : api/v1/users/{id}/forgot-password : Trả về password mới
-    @PutMapping("users/{id}/forgot-password")
+    // #9 GET : api/v1/users/{id}/forgot-password : Tạo mật khẩu mới cho user
+    @GetMapping("users/{id}/forgot-password")
     public String createNewPasswordById(@PathVariable int id) {
         return userService.createNewPasswordById(id);
     }

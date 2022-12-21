@@ -1,2 +1,7 @@
-package com.example.userbackend.service;public class MailService {
+package com.example.userbackend.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class MailService {
 }

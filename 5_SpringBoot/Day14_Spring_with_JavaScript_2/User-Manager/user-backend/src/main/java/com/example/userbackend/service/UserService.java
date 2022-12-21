@@ -6,6 +6,7 @@ import com.example.userbackend.model.User;
 import com.example.userbackend.model.dto.UserDto;
 import com.example.userbackend.model.mapper.UserMapper;
 import com.example.userbackend.model.request.CreateUserRequest;
+import com.example.userbackend.model.request.UpdateAvatarRequest;
 import com.example.userbackend.model.request.UpdatePasswordRequest;
 import com.example.userbackend.model.request.UpdateUserRequest;
 import com.example.userbackend.repository.UserRepository;
@@ -23,6 +24,7 @@ public class UserService {
     // Autowired bằng constructor
     private final UserRepository userRepository;
     private final FileService fileService;
+    private final MailService mailService;
 
     // Lấy danh sách user ở dạng DTO
     public List<UserDto> getUsers() {
@@ -126,6 +128,9 @@ public class UserService {
         // Lấy thông tin của user và đặt lại password mới cho user
         user.setPassword(newPassword);
 
+        // Gửi email chứa mật khẩu mới
+//        mailService.sendMail();
+
         // Trả về thông tin password mới
         return newPassword;
     }
@@ -160,5 +165,13 @@ public class UserService {
             throw new NotFoundException("Not found user with id = " + id);
         });
         fileService.deleteFile(id, fileId);
+    }
+
+    // Thay đổi ảnh avatar của user
+    public void updateAvatar(int id, UpdateAvatarRequest request) {
+        User user = userRepository.findById(id).orElseThrow(() -> {
+            throw new NotFoundException("Not found user with id = " + id);
+        });
+        user.setAvatar(request.getAvatar());
     }
 }

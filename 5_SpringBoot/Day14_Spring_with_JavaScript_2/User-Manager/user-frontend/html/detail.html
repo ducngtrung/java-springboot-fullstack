@@ -58,6 +58,10 @@
         height: 100%;
         object-fit: cover;
       }
+
+      .image-active {
+        border: 4px solid palevioletred;
+      }
     </style>
   </head>
 
@@ -123,7 +127,9 @@
             </div>
           </div>
           <div class="text-center mt-3">
-            <button class="btn btn-secondary btn-back">Quay lại</button>
+            <a href="./index.html" style="text-decoration: none">
+              <button class="btn btn-secondary btn-back">Quay lại</button>
+            </a>
             <button class="btn btn-success" id="btn-save">Cập nhật</button>
           </div>
         </div>
@@ -202,12 +208,12 @@
             <div class="modal-body">
               <div class="d-flex justify-content-between">
                 <div>
-                  <button class="btn btn-success" id="btn-chose-image" disabled>
+                  <button class="btn btn-success" id="btn-choose-image" disabled>
                     Chọn ảnh
                   </button>
 
-                  <label for="avatar" class="btn btn-warning">Upload ảnh</label>
-                  <input type="file" id="avatar" class="d-none" />
+                  <label for="avatar-input" class="btn btn-warning">Upload ảnh</label>
+                  <input type="file" id="avatar-input" class="d-none" />
                 </div>
                 <div>
                   <button class="btn btn-danger" id="btn-delete-image" disabled>
@@ -277,5 +283,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/detail.js"></script>
   </body>
 </html>

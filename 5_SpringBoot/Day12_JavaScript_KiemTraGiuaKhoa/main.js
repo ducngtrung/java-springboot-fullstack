@@ -76,12 +76,12 @@ function renderData(result) {
 
 // Lắng nghe sự kiện khi nhấn phím Enter sau khi nhập từ khóa
 searchInput.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    // Cancel the default action, if needed
-    event.preventDefault();
-    // Trigger the button element with a click
-    submitBtn.click();
-  }
+    if (event.key === "Enter") {
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Trigger the button element with a click
+        submitBtn.click();
+    }
 });
 
 // Lắng nghe sự kiện khi click vào nút "Add city"
