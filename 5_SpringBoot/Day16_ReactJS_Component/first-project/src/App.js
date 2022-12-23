@@ -16,11 +16,12 @@ function App() {
   ];
 
   return (
-    <React.Fragment> {/* hoặc <></>, là thẻ ảo dùng để gom nhóm element */}
+    <React.Fragment> {/* hoặc <></>, là thẻ ảo dùng để gom nhóm element, vì mỗi component chỉ được return 1 element duy nhất */}
       <h1 className='heading' style={myStyle}>
         Hello world {1 + 1}!
       </h1>
 
+      {/* Bài thực hành 1 */}
       <div className="intro-content">
         <h1 className="intro-title">Fashion Trends</h1>
         <p className="intro-description">There are some trends that are just too plain wacky to really affect your wardrobe,
@@ -28,6 +29,7 @@ function App() {
         <a href="#" className="intro-btn">Buy now</a>
       </div>
 
+      {/* Bài thực hành 2 */}
       <div className="menu-list">
         {/* Dùng vòng lặp để tạo các thẻ a từ biến "menus" */}
         {menus.map(menu => (
