@@ -5,8 +5,8 @@ import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
-//After installing and starting Docker, run this command in Terminal:
-//docker run -d -p 1080:1080 -p 1025:1025 maildev/maildev
+// After installing and starting Docker, run this command in Terminal:
+// docker run -d -p 1080:1080 -p 1025:1025 maildev/maildev
 
 @Service
 @RequiredArgsConstructor
