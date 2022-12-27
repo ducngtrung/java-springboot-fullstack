@@ -129,7 +129,7 @@ public class UserService {
         user.setPassword(newPassword);
 
         // Gửi email chứa mật khẩu mới
-//        mailService.sendMail();
+        mailService.sendMail(user.getEmail(), "Quên mật khẩu?", "Mật khẩu mới: " + newPassword);
 
         // Trả về thông tin password mới
         return newPassword;
