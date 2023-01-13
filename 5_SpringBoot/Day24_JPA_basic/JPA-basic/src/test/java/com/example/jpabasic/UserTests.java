@@ -17,7 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @SpringBootTest
-public class UserTest {
+public class UserTests {
 
     @Autowired
     private UserRepository userRepository;
@@ -66,16 +66,7 @@ public class UserTest {
 
     @Test
     void findByEmailContainingIgnoreCase_test() {
-        List<UserDto> userDtoList = userRepository.findByEmailContainingIgnoreCase("hi");
-        userDtoList.forEach(System.out::println);
-    }
-
-    @Test
-    void findByNameStartingWith_test() {
-        List<User> users = userRepository.findByNameStartingWith("c");
-        List<UserDto> userDtoList = users.stream()
-                .map(user -> UserMapper.toUserDto(user))
-                .toList();
+        List<UserDto> userDtoList = userRepository.findByEmailContainingIgnoreCase("Yahoo");
         userDtoList.forEach(System.out::println);
     }
 
@@ -86,8 +77,18 @@ public class UserTest {
     }
 
     @Test
+    void findByNameStartingWith_test() {
+        List<User> users = userRepository.findByNameStartingWith("da");
+        List<UserDto> userDtoList = users.stream()
+                .map(user -> UserMapper.toUserDto(user))
+                .toList();
+        userDtoList.forEach(System.out::println);
+    }
+
+    @Test
     void findUserInfoByNameStartingWith_test() {
-        List<UserInfo> userInfos = userRepository.findUserInfoByNameStartingWith("c");
+        List<UserInfo> userInfos = userRepository.findUserInfoByNameStartingWith("da");
         userInfos.forEach(userInfo -> System.out.println(userInfo.getId() + " - " + userInfo.getName() + " - " + userInfo.getEmail()));
     }
+
 }

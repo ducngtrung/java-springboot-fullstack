@@ -45,7 +45,8 @@ const createTodo = () => {
     let newTodoTitle = document.getElementById('input-field').value;
     let response = axios.post(`${API_URL}/todos`, {
         "title" : newTodoTitle,
-        "status" : false
+        // "status" : false
+        // Không cần truyền status mặc định là false, việc này sẽ được thực hiện qua JPA trong backend
     });
     response
         .then((res) => {
