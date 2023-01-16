@@ -44,7 +44,8 @@ btnSave.addEventListener("click", async () => {
         // Tạo user xong thì điều hướng về trang index.html
         window.location.href = "./index.html";
     } catch (error) {
-        console.log(error);
+        console.log(error.response.data);
+        alert(error.response.data.message);
     }
 })
 

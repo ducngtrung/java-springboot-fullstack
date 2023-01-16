@@ -97,8 +97,8 @@ btnChangePassword.addEventListener("click", async () => {
         });
         alert("Đổi mật khẩu thành công!");
     } catch (error) {
+        console.log(error.response.data);
         alert(error.response.data.message);
-        console.log(error);
     }
 })
 
@@ -259,8 +259,8 @@ avatarInput.addEventListener("change", async (event) => {
         images.unshift(response.data); // Đưa đường dẫn của ảnh vừa upload vào đầu mảng "images"
         renderPaginationAndRenderImages(images);
     } catch (error) {
+        console.log(error.response.data);
         alert(error.response.data.message);
-        console.log(error);
     }
 })
 
