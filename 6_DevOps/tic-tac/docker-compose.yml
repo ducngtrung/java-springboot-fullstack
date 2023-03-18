@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  frontend:
+    build: ./
+  nginx:
+    depends_on:
+      - frontend
+    restart: always
+    build: ./nginx
+    ports:
+      - "7777:80"
+    volumes:
+      - type: bind
+        source: /home/thinhbui/Workspaces/Teaching/DevOps/Docker/public
+        target: /var/www/html
+volumes:
+  nginxdata:
