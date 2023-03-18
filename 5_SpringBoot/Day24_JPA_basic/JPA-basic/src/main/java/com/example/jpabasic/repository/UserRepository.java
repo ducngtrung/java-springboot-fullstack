@@ -66,7 +66,7 @@ public interface UserRepository extends JpaRepository<User, Integer> {
     List<UserDto> findByEmailContainingIgnoreCase(String email);
 
     // Lấy Dto bằng Native Query
-    @Query(name = "findAllUserDto", nativeQuery = true)
+    @Query(nativeQuery = true, name = "findAllUserDto")
     List<UserDto> findAllUserDto();
 
     // Lấy entity rồi map sang Dto tương ứng
