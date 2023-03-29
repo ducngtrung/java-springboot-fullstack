@@ -1,4 +1,4 @@
-package techmaster.securitywithdatabase.entity;
+package techmaster.jwt.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

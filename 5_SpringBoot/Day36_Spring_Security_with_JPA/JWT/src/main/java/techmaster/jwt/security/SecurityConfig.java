@@ -1,4 +1,4 @@
-package techmaster.securitywithdatabase.security;
+package techmaster.jwt.security;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
@@ -41,6 +42,10 @@ public class SecurityConfig {
                 .exceptionHandling()
                 .authenticationEntryPoint(customAuthenticationEntryPoint)
                 .accessDeniedHandler(customAccessDenied)
+            .and()
+                .sessionManagement()
+                // không sử dụng session để lưu thông tin đăng nhập, thay vào đó lưu thông tin đăng nhập trong token
+                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
             .and()
                 .authenticationProvider(authenticationProvider)
                 // thêm customFilter vào trước UsernamePasswordAuthenticationFilter
