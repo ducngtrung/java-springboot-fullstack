@@ -1,4 +1,4 @@
-# https://ducngtrung.github.io/java-full-stack-learning.github.io/
+# https://ducngtrung.github.io/java-springboot-fullstack/
 
 # 06/07/2022
 - Learn Git, GitHub
